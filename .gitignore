@@ -1,6 +1,13 @@
+# CRITICAL: Environment variables and secrets
+.env
+
+# Directories
 venv/
-iris/
+
+# OS
 .DS_Store
+
+# Python
 __pycache__/
 *.pyc
 *.pyo
@@ -11,3 +18,24 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Model outputs and large files (generated during training)
+outputs*/
+final_*/
+*.gguf
+llama.cpp/
+llama_*_merged_float16/
+llama_*_merged_float16_Customer/
+
+# Logs
+*.log
